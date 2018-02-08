@@ -12,13 +12,27 @@ public class SparseArray {
 	}
 	
 	int[][] array;
-	int[] aces;
+	int[][] aces;
 	int[] nonZeroArray;
 	
 	public SparseArray(int y) {
 		
-		aces = new int[y];
-		Arrays.fill(aces, 1);
+		aces = new int[y][y];
+		for(int i=0; i < y; i++)
+		{
+			for(int j=0; j < y; j++)
+			{
+				
+				if(i==j)
+				{
+					array[i][j] = 1;
+				}
+				else {
+					array[i][j] = 0;
+				}
+					
+			}
+		}	
 
 	}
 	
