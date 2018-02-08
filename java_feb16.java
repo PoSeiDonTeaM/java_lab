@@ -56,6 +56,19 @@ public class SparseArray {
 		return mean;
 	}
 	
+	
+	public void printingHelper(int index)
+	{
+		System.out.print("[" + nonZeroArray[index] + "," + nonZeroArray[index + 1] + "," + nonZeroArray[index + 2] + "]-");
+	}
+	
+	public void printSparseArray() {
+		for(int i=0; i < k; i += 3)
+		{
+			printingHelper(i);
+		}
+	}
+	
 
 	public static void main(String[] args) {
 		int[] aces;
