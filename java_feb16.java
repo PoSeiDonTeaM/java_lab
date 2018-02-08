@@ -17,7 +17,7 @@ public class SparseArray {
 	
 	public SparseArray(int y) {
 		
-		int[] aces = new int[y];
+		aces = new int[y];
 		Arrays.fill(aces, 1);
 
 	}
@@ -72,7 +72,7 @@ public class SparseArray {
 
 	public static void main(String[] args) {
 		int[] aces;
-		SparseArray(10,10,5);
+		
 		
 
 	}
